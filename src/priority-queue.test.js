@@ -1,6 +1,6 @@
 const createQueue = require('./priority-queue')
 
-describe('queue', () => {
+describe('priority queue', () => {
 	it('should return the length of the combined queues', () => {
 		const q = createQueue()
 		q.add('hello')
