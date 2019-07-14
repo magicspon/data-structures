@@ -6,7 +6,7 @@ function createPriorityQueue() {
 
 	return {
 		add(item, priority = false) {
-			priority ? low.push(item) : high.push(item)
+			priority ? high.add(item) : low.add(item)
 		},
 		remove() {
 			return !high.isEmpty ? high.remove() : low.remove()
